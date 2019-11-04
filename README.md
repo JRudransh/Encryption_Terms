@@ -1,5 +1,9 @@
 # Encryption Terms
 
+### Getting Started
+    Just clone the git or download the ZIP file
+    Goto the downloaded folder
+
 #### Use of number Encryption
 `from encto import NEncryptTSK`<br>
 `NEncryptTSK(Key_One, Key_two)`<br>
