@@ -10,11 +10,11 @@
 
 
 #### Use of number Encryption
-`from encto import NumberEncryptTSK`<br>
-`NumberEncryptTSK(Key_One, Key_two)`<br>
+`from encto import NEncryptTSK`<br>
+`NEncryptTSK(Key_One, Key_two)`<br>
 #### Use of number Decryption
-`from encto import NumberDecryptTSK`<br>
-`NumberDecryptTSK(Key_One, Key_two)`<br>
+`from encto import NDecryptTSK`<br>
+`NDecryptTSK(Key_One, Key_two)`<br>
 #### Some point to notice
 `1. Key_one must be grater than Key_two`<br>
 `2. Key_two - Key_one  must be grater than 2`<br>
@@ -23,7 +23,7 @@
 
 *****
 
-###TODO
+### TODO
 1. Fix the point no `3` `The Logical Error`
 
 
