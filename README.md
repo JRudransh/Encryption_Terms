@@ -3,6 +3,7 @@
 ### Getting Started
     Just clone the git or download the ZIP file
     Goto the downloaded folder
+    Make a new python file
 
 #### Use of number Encryption
 `from encto import NEncryptTSK`<br>
