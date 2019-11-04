@@ -1,7 +1,7 @@
 """ Encryption Terms One The Encryption of numbers"""
 
 
-class NumberEncryptTSK:
+class NEncryptTSK:
     """The Encryption of number with two single keys"""
     def __init__(self, first_key=2, second_key=5):
         if first_key > second_key:
@@ -45,7 +45,7 @@ class NumberEncryptTSK:
         print(f"calculated value is {self.o}")
 
 
-class NumberDecryptTSK:
+class NDecryptTSK:
     """The Decryption of number with two single keys"""
     def __init__(self, first_key=2, second_key=5):
         if first_key > second_key:
