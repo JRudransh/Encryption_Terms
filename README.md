@@ -1,13 +1,4 @@
 # Encryption Terms
-### Basic terms of encryption to getting started with python.
-1. Number encryption 
-    1. Algorithm [`here`][1]
-    2. How to use encryption [`here`][2]
-    2. How to use decryption [`here`][3]
-    1. Some point to notice [`here`][4]
-
-
-
 
 #### Use of number Encryption
 `from encto import NEncryptTSK`<br>
@@ -25,9 +16,3 @@
 
 ### TODO
 1. Fix the point no `3` `The Logical Error`
-
-
-[1]: encto.py
-[2]: README.md#use-of-number-encryption
-[3]: README.md#use-of-number-decryption
-[4]: README.md#some-point-to-notice
