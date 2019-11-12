@@ -4,6 +4,14 @@
 class NEncryptTSK:
     """The Encryption of number with two single keys"""
     def __init__(self, first_key=2, second_key=5):
+        self.done = False
+        self.values = []
+        self.o = 0
+        self.multiplier = 1
+        self.rm = 0
+        self.dd = 0
+        self.tn = 0
+        self.tv = 0
         if first_key > second_key:
             mn = second_key
             mx = first_key
@@ -21,12 +29,8 @@ class NEncryptTSK:
         self.mx_range = self.mx_value + 1
         self.mid_value = self.mx_range - self.mn_value
 
-        self.n = int(input("Enter value: "))
-        self.o = 0
-        self.multiplier = 1
-        self.values = []
-        self.done = False
-        self.tn = self.n
+    def calc(self, n):
+        self.tn = n
         while not self.done:
             self.rm = self.tn % self.mid_value
             self.values.append(self.rm)
@@ -42,7 +46,7 @@ class NEncryptTSK:
             self.o += self.tv
             self.multiplier *= 10
 
-        print(f"calculated value is {self.o}")
+        return self.o
 
 
 class NDecryptTSK:
@@ -64,10 +68,10 @@ class NDecryptTSK:
         self.mx_value = mx
         self.mx_range = self.mx_value + 1
         self.mid_value = self.mx_range - self.mn_value
-
-        n = int(input("Enter value: "))
         self.first = True
         self.rev = 0
+
+    def calc(self, n):
         for i in str(n):
             i = int(i) - self.mn_value
             if self.first:
@@ -76,5 +80,5 @@ class NDecryptTSK:
             else:
                 self.rev = (self.rev + i) * self.mid_value
         self.rev /= self.mid_value
-        rev = int(self.rev)
-        print(f"The original number is: {rev}")
+        self.rev = int(self.rev)
+        return self.rev
