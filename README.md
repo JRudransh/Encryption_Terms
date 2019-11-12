@@ -7,10 +7,14 @@
 
 #### Use of number Encryption
 `from encto import NEncryptTSK`<br>
-`NEncryptTSK(Key_One, Key_two)`<br>
+`obj = NEncryptTSK(Key_One, Key_two)`<br>
+`encryeption = obj.calc(number)`<br>
+`print(encryeption)`<br>
 #### Use of number Decryption
 `from encto import NDecryptTSK`<br>
-`NDecryptTSK(Key_One, Key_two)`<br>
+`obj = NDecryptTSK(Key_One, Key_two)`<br>
+`decryeption = obj.calc(number)`<br>
+`print(decryeption)`<br>
 #### Some point to notice
 `1. Key_one must be grater than Key_two`<br>
 `2. Key_two - Key_one  must be grater than 2`<br>
